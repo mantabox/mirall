@@ -101,9 +101,11 @@ protected slots:
     void slotUpdateProgress(const QString&,Progress::Info);
     void slotDisplayIdle();
     void slotHelp();
+    void slotCredentialsFetched();
 private:
     void setHelp();
     void raiseDialog( QWidget* );
+    void runValidator();
 
     Systray *_tray;
     QAction *_actionOpenoC;
